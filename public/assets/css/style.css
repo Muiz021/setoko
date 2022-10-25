@@ -2,7 +2,7 @@
     font-family: poppins;
 }
 body{
-    background-color: rgb(242, 250, 249);
+    background-color: rgb(250, 249, 242);
 }
 .navbar{
     background-color: rgb(255, 171, 74);
@@ -19,19 +19,51 @@ body{
 }
 
 #hero{
-    margin-top: 40px;
+    margin-top: 140px;
+    margin-bottom: 50px;
+}
+#hero .title{
     margin-bottom: 20px;
+    font-size: 40px;
+    color: rgb(71, 71, 71);
+    font-weight: 600;
+}
+#hero .title span{
+    color: rgb(255, 171, 74);
+}
+#hero .subtitle{
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(114, 114, 114);
+}
+
+#produk .row{
+    padding: 0px 110px;
 }
 
 #produk .card{
     border: none;
     background-color: #fff;
     padding: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all ease-in-out 0.5s;
+    border-radius: 50%;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+}
+#produk .card:hover{
+    transition: all ease-in-out 0.5s;
+    border: none;
+    color: #fff;
+    background-color: rgb(255, 171, 74);
+}
+#produk .card img{
+    width: 100px;
+    height: 100px;
 }
 
 #semua{
-    margin-top: 20px;
+    padding-top: 60px;
 }
 #semua .cards{
     background-color: #fff;
@@ -48,3 +80,99 @@ body{
     color: rgb(255, 171, 74);
 }
 
+
+
+#baju{
+    padding-top: 60px;
+}
+#baju .cards{
+    background-color: #fff;
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+}
+#baju .card:hover{
+    border: 1px solid rgb(255, 171, 74);
+}
+#baju .cards .card .nama_produk{
+    font-size: 14px;
+}
+#baju .cards .card .harga{
+    color: rgb(255, 171, 74);
+}
+
+
+
+#celana{
+    padding-top: 60px;
+}
+#celana .cards{
+    background-color: #fff;
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+}
+#celana .card:hover{
+    border: 1px solid rgb(255, 171, 74);
+}
+#celana .cards .card .nama_produk{
+    font-size: 14px;
+}
+#celana .cards .card .harga{
+    color: rgb(255, 171, 74);
+}
+
+
+
+#bajumuslim{
+    padding-top: 60px;
+}
+#bajumuslim .cards{
+    background-color: #fff;
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+}
+#bajumuslim .card:hover{
+    border: 1px solid rgb(255, 171, 74);
+}
+#bajumuslim .cards .card .nama_produk{
+    font-size: 14px;
+}
+#bajumuslim .cards .card .harga{
+    color: rgb(255, 171, 74);
+}
+
+
+
+#faq{
+    padding-top: 60px;
+}
+#faq .title{
+    font-size: 36px;
+    color: rgb(255, 171, 74);
+}
+#faq .subtitle{
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: rgb(114, 114, 114);
+}
+#faq .row{
+    padding: 0px 60px;
+}
+
+
+/* footer */
+#footer{
+    margin-top: 100px;
+    padding: 50px 0px 10px 0px;
+    color: #fff;
+    background-color: rgb(255, 166, 64);
+}
+#footer a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    transition: all ease-in-out 0.5s;
+}
+#footer a:hover{
+    color: rgb(114, 114, 114);
+    transition: all ease-in-out 0.5s;
+}
