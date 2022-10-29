@@ -28,24 +28,32 @@
                     <img src="{{ asset('assets/image/bglogin.png') }}" alt="" width="100%">
                 </div>
                 <div class="col-lg-6 col-md-12 mb-3">
-                    <form action="" method="POST">
-                        
+                    <form action="{{ '/dashboard-admin' }}" method="POST">
+                        @csrf
                         <div class="card">
+                            @if (session('status'))
+                                <div class="alert alert-danger">
+                                    {{ session('message') }}
+                                </div>
+                            @endif
                             <div class="mb-1">
                                 <p class="title">Login Admin</p>
                             </div>
                             <div class="mb-3">
                                 <label for="username" class="form-label">Username</label>
-                                <input name="username" type="text" class="form-control" id="username" placeholder="Masukkan Username" required>
+                                <input name="username" type="text" class="form-control" id="username"
+                                    placeholder="Masukkan Username" required>
                             </div>
                             <div class="mb-3">
                                 <label for="password" class="form-label">Password</label>
-                                <input name="password" type="password" class="form-control" id="password" placeholder="Masukkan Password" required>
+                                <input name="password" type="password" class="form-control" id="password"
+                                    placeholder="Masukkan Password" required>
                             </div>
                             <div class="mb-3 text-end">
-                                <button type="submit" class="btn px-4">Login <i class="bi bi-box-arrow-in-right"></i></button>
+                                <button type="submit" class="btn px-4">Login <i
+                                        class="bi bi-box-arrow-in-right"></i></button>
                             </div>
-            
+
                         </div>
                     </form>
                 </div>
