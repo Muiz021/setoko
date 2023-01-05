@@ -67,7 +67,7 @@
                                                                             class="btn btn-primary me-2"
                                                                             data-bs-toggle="modal"
                                                                             data-bs-target="#get-{{ $item->id }}">
-                                                                            <i class="bi bi-pencil-square"></i> Edit</a>
+                                                                        Edit</a>
 
                                                                         <a href="/menu-baju/{{ $item->id }}"
                                                                             type="submit" class="btn btn-danger"
